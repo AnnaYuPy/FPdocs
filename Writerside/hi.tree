@@ -6,6 +6,36 @@
                  name="Help Instance"
                  start-page="Tutorial.md">
 
+    <toc-element topic="Обзор.md"/>
     <toc-element topic="Tutorial.md"/>
+    <toc-element topic="Faceplate-Tutorial.md">
+        <toc-element topic="Общий-вид.md"/>
+        <toc-element topic="KPI.md"/>
+        <toc-element topic="Прототипы.md"/>
+        <toc-element topic="PLC-соединения.md">
+            <toc-element topic="Привязки.md"/>
+            <toc-element topic="Мастера.md"/>
+        </toc-element>
+        <toc-element topic="IoT-соединения.md"/>
+        <toc-element topic="Архивы.md"/>
+        <toc-element topic="Сообщения.md"/>
+        <toc-element topic="Скрипты.md">
+            <toc-element topic="Глобальные.md"/>
+            <toc-element topic="Локальные.md"/>
+        </toc-element>
+        <toc-element topic="Каталоги.md"/>
+        <toc-element topic="Шаблоны.md"/>
+        <toc-element topic="Права.md">
+            <toc-element topic="Пользователи.md"/>
+            <toc-element topic="Роли.md"/>
+        </toc-element>
+        <toc-element topic="Сервера.md"/>
+        <toc-element topic="Видео.md"/>
+        <toc-element topic="Поддержка-языков.md"/>
+        <toc-element topic="Run-Time.md"/>
+        <toc-element topic="Git.md"/>
+    </toc-element>
+    <toc-element topic="Глоссарий.md"/>
+    <toc-element topic="Справочник-Reference.md"/>
     <toc-element topic="How-to.md"/>
 </instance-profile>

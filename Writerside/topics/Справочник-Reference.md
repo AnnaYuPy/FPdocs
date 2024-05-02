@@ -1,34 +1,95 @@
 # Справочник (Reference)
 
-A reference article is information-oriented.
-It provides a structured description of a product:
-its APIs, classes, functions, configuration options, actions, and so on.
-Start with a summary of what this reference article is about, and what the items you are describing are used for.
+## fp:get_value()
+: функция чтения значений полей тегов.
 
-## Command
-
-Syntax:
+Синтаксис:
 
 ```shell
-cmd [OPTIONS]
+fp:get_value(<путь к тегу>, <поле тега>)
+fp:get_value(<путь тега>, <поле тега>, <значение по умолчанию>)
 ```
 
-## Options
+## Параметры
 
-Describe what each option is used for:
+"<путь к тегу>"
+: путь к месту расположения тега. Например: “TAGS/Магнитная сепарация/AI_01”
 
--o, --open
-: Opens a file.
+"<поле тега>"
+: имя поля тега, значение которого нужно прочитать.
 
--c, --close
-: Closes a file.
+"<значение по умолчанию>"
+: используется, если <поле тега> не содержит значения (равно none).
 
--v, --version
-: Displays version information.
+## Возвращаемое значение
+: кортеж: {ok,<значение>}, в случае успешного выполнения
+: {error,<error text>}, при возникновении ошибки.
 
--h, --help
-: Displays help.
+## Примеры
 
-<seealso>
-    <!--Provide links to related how-to guides, overviews, and tutorials.-->
-</seealso>
+```shell
+{ok,Value}=fp:get_value(“TAGS/Магнитная сепарация/AI_01”, “value”)
+
+{ok,Value}=fp:get_value(“TAGS/Магнитная сепарация/AI_01”, “value”, 0.0)
+```
+
+## fp:set_value()
+: функция изменения значений одного или нескольких полей тега.
+
+Синтаксис:
+
+```shell
+fp:set_value(<путь тега>, <поле тега>,<значение>)
+fp:set_value(<путь тега>, [ { <поле тега>,<значение> }, { <поле тега>,<значение> } …  ])
+```
+
+## Параметры
+
+"<путь к тегу>"
+: путь к месту расположения тега. Например: “TAGS/Магнитная сепарация/AI_01”
+
+"<поле тега>"
+: имя поля тега, значение которого нужно прочитать.
+
+"<значение>"
+: новое значение для поля тега.
+
+## Возвращаемое значение
+: кортеж: {ok}, в случае успешного выполнения
+: {error,<error text>}, при возникновении ошибки.
+
+## Примеры
+
+```shell
+fp:set_value(“TAGS/Магнитная сепарация/AI_01”, “flagValueHiHi”, <<”true”>> )
+
+fp:set_value(“TAGS/Магнитная сепарация/AI_01”, [ {“flagValueHiHi”, <<”false”>> }, {“flagValueLoLo”, <<”true”>>} ] )
+```
+
+## fp:find_tags()
+: функция поиска тега по определенным условиям.
+
+Синтаксис:
+
+```shell
+fp:find_tags([ <условие1>, <условие2> ])
+```
+
+## Параметры
+
+"<условие>"
+: шаблон для поиска.
+поиск тегов в папке
+: {folder, <путь к папке>}
+поиск тегов по шаблону:
+{pattern, <имя шаблона>}
+
+## Возвращаемое значение
+: список найденных тегов, в случае успешного выполнения
+: {error,<error text>}, при возникновении ошибки.
+
+## Примеры
+
+```shell
+Tags = fp:find_tags([ { folder, “TAGS/Магнитная сепарация” }, {pattern, “AI”} ])
+```

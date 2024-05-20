@@ -24,7 +24,6 @@
             <toc-element topic="Локальные.md"/>
         </toc-element>
         <toc-element topic="Каталоги.md"/>
-        <toc-element topic="Шаблоны.md"/>
         <toc-element topic="Права.md">
             <toc-element topic="Пользователи.md"/>
             <toc-element topic="Роли.md"/>

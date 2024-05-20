@@ -14,4 +14,8 @@
         <description>Created after removal of "IoT-connections" from Help Instance</description>
         <accepts>IoT-connections.html</accepts>
     </rule>
+    <rule id="1bb0649a">
+        <description>Created after removal of "Прототипы" from Help Instance</description>
+        <accepts>Шаблоны.html</accepts>
+    </rule>
 </rules>

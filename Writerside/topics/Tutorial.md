@@ -1,14 +1,5 @@
 # Запуск Faceplate
 
-Tutorials are learning-oriented articles that help users to go through a process and achieve a deliverable.
-Start with an introduction: for whom is this tutorial and what the reader will achieve by reading it.
-Answer the question: "Why should I follow this?"
-
-Provide a short outline for the tutorial.
-In this tutorial, you will learn how to:
-* Do this
-* Deal with that
-
 Для работы с Faceplate, должен быть обязательно запущен сервер. Локальное имя сервера (узла, ноды) должно быть прописано в /etc/hosts.
 
 Запуск сервера производится через запуск файла:

@@ -1,4 +1,4 @@
-# Установка Faceplate
+# Запуск Faceplate
 
 Tutorials are learning-oriented articles that help users to go through a process and achieve a deliverable.
 Start with an introduction: for whom is this tutorial and what the reader will achieve by reading it.
@@ -9,41 +9,48 @@ In this tutorial, you will learn how to:
 * Do this
 * Deal with that
 
-## Before you start
+Для работы с Faceplate, должен быть обязательно запущен сервер. Локальное имя сервера (узла, ноды) должно быть прописано в /etc/hosts.
 
-List the prerequisites that are required or recommended.
+Запуск сервера производится через запуск файла:
 
-Make sure that:
-- First prerequisite
-- Second prerequisite
+Для Linux:
+```bash
+<путь_к_Faceplate>/faceplate/bin/faceplate - среда Linux
+```
 
-## Part 1
+## Запуск Faceplate {id = fp1}
+Далее для запуска в терминале директории, в которой находится Faceplate, необходимо выполнить одну из следующих команд:
 
-Describe what the user will learn and accomplish in the first part,
-then write a step-by-step procedure but on a real-world example.
+./faceplate console - запуск в консоли.
+Эта команда предполагает, что можно запустить сборку с интерактивной оболочкой, т.е. можно вводить команды или взаимодействовать с Faceplate через интерфейс командной строки.
 
-1. Execute the following command in the terminal:
+./faceplate foreground - запуск на переднем плане. Эта команда запускает сборку на переднем плане и направляет вывод в стандартный поток вывода (stdout).
+В режиме foreground необходимо учитывать, что логи пишутся в syslog и необходимо уменьшить размер журнала journalctl --vacuum-size=100M либо # journalctl --vacuum-time=7d
 
-   ```bash
-    run this --that
-   ```
+./faceplate daemon - запуск в фоновом режиме. При использовании этой команды сервер будет работать в фоновом режиме без привязки к текущему терминалу.
 
-2. Step with a [link](https://www.jetbrains.com)
+## Останов Faceplate {id = fp2}
+Для останова Faceplate необходимо выполнить в терминале директории, в которой располагается запущенный Faceplate, одно из следующих действий:
 
-3. Final step in part 1.
+Для Linux:
+```bash
+<путь_к_Faceplate>/faceplate/bin/faceplate - среда Linux
+```
 
-## Part 2
+Останов консольного режима осуществляется комбинацией клавиш Сtrl+c и выбора литеры “А” (abort) для корректного прерывания процесса.
 
-This is the second part of the tutorial:
+./faceplate stop - останов сервера, если произведен запуск командой console, foreground, daemon.
 
-1. Step 1
-2. Step 2
-3. Step n
+Для подключения к узлу необходимо выполнить в терминале директории, в которой располагается запущенный Faceplate, следующую команду:
 
-## What you've learned {id="what-learned"}
+./faceplate daemon_attach - подключение к узлу, запущенному как daemon
 
-Summarize what the reader achieved by completing this tutorial.
+./faceplate remote_console - подключение удаленной оболочки к работающему узлу
 
-<seealso>
-<!--Give some related links to how-to articles-->
-</seealso>
+ulimit -n 400000
+
+env ATTACH_TO=fp@master.fp - режим подключения и т.д.
+
+env FORCE=true - запуск в случае, если система не отвечает, и если известно, какой сервер актуальный.
+
+RUNTIME=false - запуск со стоп run-time принудительно.

@@ -18,6 +18,7 @@
         </toc-element>
         <toc-element topic="IoT-соединения.md"/>
         <toc-element topic="Архивы.md"/>
+        <toc-element topic="Тренды.md"/>
         <toc-element topic="Сообщения.md"/>
         <toc-element topic="Скрипты.md">
             <toc-element topic="Глобальные.md"/>

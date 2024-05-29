@@ -18,4 +18,20 @@
         <description>Created after removal of "Прототипы" from Help Instance</description>
         <accepts>Шаблоны.html</accepts>
     </rule>
+    <rule id="2701c5d1">
+        <description>Created after removal of "Глобальные" from Help Instance</description>
+        <accepts>Глобальные.html</accepts>
+    </rule>
+    <rule id="437b06bd">
+        <description>Created after removal of "Локальные" from Help Instance</description>
+        <accepts>Локальные.html</accepts>
+    </rule>
+    <rule id="570ea145">
+        <description>Created after removal of "Пользователи" from Help Instance</description>
+        <accepts>Пользователи.html</accepts>
+    </rule>
+    <rule id="2084da0">
+        <description>Created after removal of "Роли" from Help Instance</description>
+        <accepts>Роли.html</accepts>
+    </rule>
 </rules>

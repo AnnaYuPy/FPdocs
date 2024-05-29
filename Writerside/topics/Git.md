@@ -1,49 +1,85 @@
 # Git
 
-Tutorials are learning-oriented articles that help users to go through a process and achieve a deliverable.
-Start with an introduction: for whom is this tutorial and what the reader will achieve by reading it.
-Answer the question: "Why should I follow this?"
+# <a name="_jxpsleumsywp"></a>Состав модуля Git
+Модуль состоит из трёх разделов:
 
-Provide a short outline for the tutorial.
-In this tutorial, you will learn how to:
-* Do this
-* Deal with that
+- Settings
+- Local Diff
+- Remote Diff
 
-## Before you start
+![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.001.png)
 
-List the prerequisites that are required or recommended.
+## <a name="_vaom2j9ejntf"></a>Settings
+В разделе **Settings** содержится два подраздела **Clone** и **Init**.
+### <a name="_v7msrsbjcfxp"></a>Clone
+В подразделе **Clone** выполняется копирование существующего проекта из GitLab в FACEPLATE. Это может быть удобно в том случае, когда осуществляется доработка готового проекта или есть необходимость внедрить компоненты этого проекта в текущий.
 
-Make sure that:
-- First prerequisite
-- Second prerequisite
+![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.002.png)
 
-## Part 1
+- *Username и Password:* поля для ввода логина и пароля (токена???) GitLab для аутентификации к репозиторию. Это позволяет FACEPLATE взаимодействовать с GitLab аккаунтом пользователя и выполнять операции, такие как *commit, pull и push*.
+- *Remote URL:* ввод URL-адреса удаленного репозитория GitLab, который пользователь получает из раздела "Клонировать с HTTPS" в GitLab. Скопируйте URL-адрес и вставьте его в это поле, Для того чтобы установить связь между локальным и удаленным репозиториями (Рисунок 3).
+- *Branch name:* название ветки (branch), с которой вы хотите работать в своем локальном репозитории.
+- *Project prefix:* путь к проекту внутри репозитория GitLab. Вы можете задать префикс проекта, чтобы FACEPLATE знал, в какой части репозитория находится ваш проект. Это полезно, если ваш репозиторий содержит несколько проектов или компонентов, и вы хотите работать только с определенным проектом в FACEPLATE.
+- Кнопка *Clone*: начало клонирования данных из репозитория.
+- Кнопка *Отмена*: отмена действий и закрытие окна.
 
-Describe what the user will learn and accomplish in the first part,
-then write a step-by-step procedure but on a real-world example.
 
-1. Execute the following command in the terminal:
+![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.003.png)
 
-   ```bash
-    run this --that
-   ```
+Рисунок 3 - Remote URL
+### <a name="_k1hvowiz8ifw"></a>Init
+В подразделе **Init** инициализируем новый репозиторий GitLab (Рисунок 4):
 
-2. Step with a [link](https://www.jetbrains.com)
+- *Username и Password:* ввод логина и пароля GitLab-а для аутентификации при доступе к репозиторию. Это позволяет FACEPLATE взаимодействовать с вашим GitLab аккаунтом и выполнить операции, такие как *commit, pull* и *push*.
+- *Remote URL:* ввод URL-адреса репозитория GitLab, который отображается из раздела "Клонировать с HTTPS" в GitLab. Скопируйте URL-адрес и вставьте его в это поле, чтобы установить связь между вашим локальным репозиторием и удаленным репозиторием (Рисунок 3).
+- Кнопка *Init*: Инициализация.
+- Кнопка *Отмена*: отмена действий и закрытие окна.
+- Кнопка *Reset*: Эта кнопка появится после инициализации, ей можно удалить локальный проект.
 
-3. Final step in part 1.
+  ![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.004.png)
 
-## Part 2
+Рисунок 4 - Подраздел Init
 
-This is the second part of the tutorial:
+После клонирования в FACEPLATE появится указанный репозиторий. Теперь можно осуществлять доработки готового проекта и делать в разделе **Local Diff** *commit* и *push* (Рисунок 5).
 
-1. Step 1
-2. Step 2
-3. Step n
+![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.005.png)
 
-## What you've learned {id="what-learned"}
+` `Рисунок 5 - Команды commit и push
 
-Summarize what the reader achieved by completing this tutorial.
+`	`Чтобы отправить данные из своего проекта (Faceplate) на сервер GitLab, сначала делается *commit* (зафиксировать текущие изменения) (Рисунок 6), затем *push* (отправить изменения на сервер GitLab).
 
-<seealso>
-<!--Give some related links to how-to articles-->
-</seealso>
+![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.006.png)
+
+Рисунок 6 - Commit
+
+`	`В GitLab появятся все данные, которые были запушены (Рисунок 7).
+
+![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.007.png)
+
+Рисунок 76 - Git после команд commit и push
+## <a name="_p53ovqmjn66e"></a>Local Diff
+Также все данные появятся в разделах Local Diff (Рисунок 8) и Remote Diff (Рисунок 9).
+
+![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.008.png)                      ![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.009.png)
+
+`                   `Рисунок 8 - Раздел Local Diff		      Рисунок 9 - Раздел Remote Diff
+## <a name="_t924v8a3k5rs"></a>Remote Diff
+`	`В разделе **Remote Diff** можно работать с репозиторием GitLab командами *pull*, *rollback* и *rebase* (Рисунок 10).
+
+![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.010.png)
+
+Рисунок 10 - Команды *pull*, *rollback* и *rebase*
+
+Если мы изменим данные в Git, то эти измененные данные отобразятся синим  в разделах Local Diff (Рисунок 11) и Remote Diff (Рисунок 12).
+
+![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.011.png)
+
+Рисунок 11 - Измененные данные в Local Diff
+
+![](Aspose.Words.1c6c0634-04a5-486b-81fb-4b2a5887113b.012.png)
+
+Рисунок 12 - Измененные данные в Remote Diff
+
+- *pull* - загружаются измененные данные из удаленного репозитория для немедленного обновления локального репозитория этими данными.
+- *rollback* - возвращается проект последнего коммита. Но надо учитывать, что при нажатии на данную кнопку, изменения, которые не были закоммичены удалятся.
+- *rebase* - берутся все коммиты из одной ветки и в том же порядке применить их к другой ветке.

@@ -8,6 +8,7 @@
 
     <toc-element topic="Обзор.md"/>
     <toc-element topic="Tutorial.md"/>
+    <toc-element topic="Порты-используемые-в-Faceplate.md"/>
     <toc-element topic="Faceplate-Tutorial.md">
         <toc-element topic="Общий-вид.md"/>
         <toc-element topic="KPI.md"/>

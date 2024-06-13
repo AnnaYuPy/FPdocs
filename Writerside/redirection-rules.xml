@@ -34,4 +34,16 @@
         <description>Created after removal of "Роли" from Help Instance</description>
         <accepts>Роли.html</accepts>
     </rule>
+    <rule id="4217099e">
+        <description>Created after removal of "Run-Time" from Faceplate docs</description>
+        <accepts>Run-Time.html</accepts>
+    </rule>
+    <rule id="6ddd922">
+        <description>Created after removal of "Тренды" from Faceplate docs</description>
+        <accepts>Тренды.html</accepts>
+    </rule>
+    <rule id="3e5813d2">
+        <description>Created after removal of "Тренды1" from Faceplate docs</description>
+        <accepts>Тренды1.html</accepts>
+    </rule>
 </rules>

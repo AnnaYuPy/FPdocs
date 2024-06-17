@@ -7,6 +7,7 @@
                  start-page="Tutorial.md">
 
     <toc-element topic="Обзор.md"/>
+    <toc-element topic="Требования-к-персоналу.md"/>
     <toc-element topic="Tutorial.md"/>
     <toc-element topic="Порты-используемые-в-Faceplate.md"/>
     <toc-element topic="Faceplate-Tutorial.md">

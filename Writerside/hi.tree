@@ -8,8 +8,8 @@
 
     <toc-element topic="Обзор.md"/>
     <toc-element topic="Требования-к-персоналу.md"/>
-    <toc-element topic="Tutorial.md"/>
     <toc-element topic="Порты-используемые-в-Faceplate.md"/>
+    <toc-element topic="Tutorial.md"/>
     <toc-element topic="Faceplate-Tutorial.md">
         <toc-element topic="Общий-вид.md"/>
         <toc-element topic="KPI.md"/>
@@ -37,10 +37,23 @@
         <toc-element topic="Тренды.md"/>
     </toc-element>
     <toc-element topic="Ecomet-СУБД.md">
-        <toc-element topic="Методы-СУБД.md"/>
+        <toc-element topic="Настройка-и-работа-с-базой-данных.md"/>
+        <toc-element topic="Методы-СУБД.md">
+            <toc-element topic="Класс-Ecomet.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="Глоссарий.md"/>
     <toc-element topic="Справочник-Reference.md">
+        <toc-element topic="API-Faceplate.md"/>
+        <toc-element topic="Поддержка-жизненного-цикла-программного-обеспечения.md"/>
+        <toc-element topic="Анализ-архива-сообщений-на-предмет-системных-сообщений.md"/>
+        <toc-element topic="Мониторинг-состояния-соединений-и-привязок.md"/>
+        <toc-element topic="Отправка-уведомлений-по-электронной-почте.md"/>
+        <toc-element topic="Создание-резерва-базы-данных.md"/>
+        <toc-element topic="Возможные-неисправности-и-их-решение.md">
+            <toc-element topic="Установка-программного-комплекса-FACEPLATE.md"/>
+            <toc-element topic="Настройка-горячего-резервирования-серверов.md"/>
+        </toc-element>
         <toc-element topic="Паттерны-ошибок.md"/>
     </toc-element>
     <toc-element topic="How-to.md"/>

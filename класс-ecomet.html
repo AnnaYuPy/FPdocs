@@ -1,0 +1,486 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-06-17T17:50:01.363275871"><title>ecomet.js | Faceplate docs</title><script type="application/json" id="virtual-toc-data">[{"id":"-5wb2ju_2014","level":0,"title":"Конструктор","anchor":"#-5wb2ju_2014"},{"id":"-5wb2ju_2020","level":0,"title":"Методы","anchor":"#-5wb2ju_2020"},{"id":"-5wb2ju_2174","level":0,"title":"Внутренние методы","anchor":"#-5wb2ju_2174"},{"id":"-5wb2ju_2195","level":0,"title":"Статические методы","anchor":"#-5wb2ju_2195"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="ecomet.js | Faceplate docs"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Faceplate docs Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/класс-ecomet.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="ecomet.js | Faceplate docs"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/класс-ecomet.html#webpage",
+    "url": "writerside-documentation/класс-ecomet.html",
+    "name": "ecomet.js | Faceplate docs",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Faceplate docs Help"
+}</script><!-- End Schema.org --></head><body data-id="Класс-Ecomet" data-main-title="ecomet.js" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Ecomet-СУБД.md|Ecomet (СУБД)///Методы-СУБД.md|API СУБД"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Faceplate docs  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Класс-Ecomet" id="Класс-Ecomet.md">ecomet.js</h1><p id="-5wb2ju_2013">Класс Ecomet (ecomet.js) предоставляет интерфейс на JavaScript для взаимодействия с СУБД Ecomet через WebSocket. Ниже приведен подробный список методов, включая описание их параметров и возвращаемых значений, а также примеры использования.</p><section class="chapter"><h2 id="-5wb2ju_2014" data-toc="-5wb2ju_2014">Конструктор</h2><section class="chapter"><h3 id="constructor" data-toc="constructor">constructor()</h3><p id="-5wb2ju_2015">: метод для создания и инициализации экземпляра класса Ecomet с начальными свойствами.</p><p id="-5wb2ju_2016">Синтаксис:</p><div class="code-block" data-lang="bash">
+constructor()
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2018" data-toc="-5wb2ju_2018">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const ecomet = new Ecomet();
+</div></div></div></section></section></section><section class="chapter"><h2 id="-5wb2ju_2020" data-toc="-5wb2ju_2020">Методы</h2><section class="chapter"><h3 id="connect" data-toc="connect">connect()</h3><p id="-5wb2ju_2021">: метод для подключения к серверу Ecomet, используя указанные IP, порт и протокол.</p><p id="-5wb2ju_2022">Синтаксис:</p><div class="code-block" data-lang="bash">
+connect(IP, Port, Protocol, OnOk, OnError, OnClose)
+</div><p id="-5wb2ju_2024">Параметры:</p><div class="code-block" data-lang="none">
+IP (string): IP-адрес сервера.
+
+Port (number): Номер порта сервера.
+
+Protocol (string): Протокол (например, &quot;http&quot;, &quot;https&quot;).
+
+OnOk (function): Callback-функция при успешном подключении.
+
+OnError (function): Callback-функция при ошибке подключения.
+
+OnClose (function): Callback-функция при закрытии соединения.
+</div><p id="-5wb2ju_2026">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+нет.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2028" data-toc="-5wb2ju_2028">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const ecomet = new Ecomet();
+
+ecomet.connect(
+    &quot;127.0.0.1&quot;,
+    &quot;8080&quot;,
+    &quot;ws:&quot;, // WebSocket протокол
+    () =&gt; {
+        console.log(&quot;Успешное подключение к серверу&quot;);
+    },
+    (error) =&gt; {
+        console.error(&quot;Ошибка подключения:&quot;, error);
+    },
+    () =&gt; {
+        console.log(&quot;Соединение закрыто&quot;);
+    }
+);
+</div></div></div></section></section><section class="chapter"><h3 id="forkconnection" data-toc="forkconnection">forkConnection()</h3><p id="-5wb2ju_2030">: метод, который создает форк (ответвление) подключение к серверу Ecomet.</p><p id="-5wb2ju_2031">Синтаксис:</p><div class="code-block" data-lang="bash">
+forkConnection()
+</div><p id="-5wb2ju_2033">Параметры:</p><div class="code-block" data-lang="none">
+нет.
+</div><p id="-5wb2ju_2035">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Promise&lt;Ecomet&gt;: Обещание, которое разрешается в новый экземпляр 
+Ecomet с активным форк-подключением.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2037" data-toc="-5wb2ju_2037">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+ecomet.forkConnection()
+    .then(forkedConnection =&gt; {
+        console.log(&quot;Форк соединения успешно создан&quot;);
+        // Используйте forkedConnection для дальнейших операций
+    })
+    .catch(error =&gt; {
+        console.error(&quot;Ошибка создания форка соединения:&quot;, error);
+    });
+</div></div></div></section></section><section class="chapter"><h3 id="connecturl" data-toc="connecturl">connectUrl()</h3><p id="-5wb2ju_2039">: метод для подключения к серверу Ecomet, используя указанный URL.</p><p id="-5wb2ju_2040">Синтаксис:</p><div class="code-block" data-lang="bash">
+connectUrl(URL, OnOk, OnError, OnClose)
+</div><p id="-5wb2ju_2042">Параметры:</p><div class="code-block" data-lang="none">
+URL (string): WebSocket URL сервера.
+
+OnOk (function): Callback-функция при успешном подключении.
+
+OnError (function): Callback-функция при ошибке подключения.
+
+OnClose (function): Callback-функция при закрытии соединения.
+</div><p id="-5wb2ju_2044">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+нет.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2046" data-toc="-5wb2ju_2046">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const ecomet = new Ecomet();
+
+const serverUrl = &quot;ws://127.0.0.1:8080/websocket&quot;; // URL сервера
+
+ecomet.connectUrl(
+    serverUrl,
+    () =&gt; {
+        console.log(&quot;Успешное подключение к серверу&quot;);
+
+		// Пример выполнения запроса после подключения 
+		const queryStatement = &quot;SELECT * FROM objects WHERE type='example'&quot;; 
+		ecomet.query( 
+			queryStatement, 
+			(result) =&gt; { 
+				console.log(&quot;Результаты запроса:&quot;, result); 
+			}, 
+			(error) =&gt; { 
+				console.error(&quot;Ошибка выполнения запроса:&quot;, error); 
+			}, 
+			5000 // Таймаут 5 секунд 
+		); 
+	}, 
+	(error) =&gt; { 
+		console.error(&quot;Ошибка подключения:&quot;, error); 
+	}, 
+	() =&gt; { 
+		console.log(&quot;Соединение закрыто&quot;); 
+	} 
+);
+</div></div></div></section></section><section class="chapter"><h3 id="close" data-toc="close">close()</h3><p id="-5wb2ju_2048">: метод, который закрывает WebSocket соединение.</p><p id="-5wb2ju_2049">Синтаксис:</p><div class="code-block" data-lang="bash">
+close()
+</div><p id="-5wb2ju_2051">Параметры:</p><div class="code-block" data-lang="none">
+нет.
+</div><p id="-5wb2ju_2053">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+нет.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2055" data-toc="-5wb2ju_2055">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+ecomet.close();
+console.log(&quot;Соединение закрыто&quot;);
+</div></div></div></section></section><section class="chapter"><h3 id="is-ok" data-toc="is-ok">is_ok()</h3><p id="-5wb2ju_2057">: метод, который проверяет, открыто ли WebSocket соединение.</p><p id="-5wb2ju_2058">Синтаксис:</p><div class="code-block" data-lang="bash">
+is_ok()
+</div><p id="-5wb2ju_2060">Параметры:</p><div class="code-block" data-lang="none">
+нет.
+</div><p id="-5wb2ju_2062">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+boolean: Возвращает true, если соединение открыто, иначе false.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2064" data-toc="-5wb2ju_2064">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+if (ecomet.is_ok()) {
+    console.log(&quot;Соединение активно&quot;);
+} else {
+    console.log(&quot;Соединение не активно&quot;);
+}
+</div></div></div></section></section><section class="chapter"><h3 id="login" data-toc="login">login()</h3><p id="-5wb2ju_2066">: метод, который выполняет вход в систему с указанными логином и паролем.</p><p id="-5wb2ju_2067">Синтаксис:</p><div class="code-block" data-lang="bash">
+login(login, pass, OnOk, OnError, Timeout)
+</div><p id="-5wb2ju_2069">Параметры:</p><div class="code-block" data-lang="none">
+login (string): Логин пользователя.
+pass (string): Пароль пользователя.
+OnOk (function): Callback-функция при успешном входе.
+OnError (function): Callback-функция при ошибке входа.
+Timeout (number): Время ожидания в миллисекундах.
+</div><p id="-5wb2ju_2071">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия, который можно использовать для 
+дополнительных операций, например, для отмены запроса или для 
+отслеживаания его состояния. 
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2073" data-toc="-5wb2ju_2073">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+ecomet.login(
+    &quot;myLogin&quot;,
+    &quot;myPassword&quot;,
+    (result) =&gt; {
+        console.log(&quot;Авторизация успешна:&quot;, result);
+    },
+    (error) =&gt; {
+        console.error(&quot;Ошибка авторизации:&quot;, error);
+    },
+    5000 // Таймаут 5 секунд
+);
+</div></div></div></section></section><section class="chapter"><h3 id="debug-applyto" data-toc="debug-applyto">debug_applyTo()</h3><p id="-5wb2ju_2075">: метод, который асинхронно применяет отладочные параметры к объекту.</p><p id="-5wb2ju_2076">Синтаксис:</p><div class="code-block" data-lang="bash">
+debug_applyTo(fields, oid)
+</div><p id="-5wb2ju_2078">Параметры:</p><div class="code-block" data-lang="none">
+fields (object): Поля объекта.
+oid (string): Идентификатор объекта.
+</div><p id="-5wb2ju_2080">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Promise&lt;object&gt;: Обещание, которое разрешается в обновленные поля объекта.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2082" data-toc="-5wb2ju_2082">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const fieldsToDebug = { &quot;.folder&quot;: &quot;/root/FP/prototypes/example/content&quot; }; 
+const oidToDebug = &quot;exampleOid&quot;; 
+
+    ecomet.debug_applyTo(fieldsToDebug, oidToDebug).then(result =&gt; { 
+	    console.log(&quot;Результат обработки данных:&quot;, result); 
+    }).catch(error =&gt; { 
+	    console.error(&quot;Ошибка обработки данных:&quot;, error); 
+});
+</div></div></div></section></section><section class="chapter"><h3 id="create-object" data-toc="create-object">create_object()</h3><p id="-5wb2ju_2084">: метод для создания нового объекта с указанными полями.</p><p id="-5wb2ju_2085">Синтаксис:</p><div class="code-block" data-lang="bash">
+create_object(fields, OnOk, OnError, Timeout)
+</div><p id="-5wb2ju_2087">Параметры:</p><div class="code-block" data-lang="none">
+fields (object): Поля нового объекта.
+OnOk (function): Callback-функция при успешном создании.
+OnError (function): Callback-функция при ошибке создания.
+Timeout (number): Время ожидания в миллисекундах.
+</div><p id="-5wb2ju_2089">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2091" data-toc="-5wb2ju_2091">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const fields = { 
+	name: &quot;New Object&quot;, 
+	type: &quot;example&quot; 
+}; 
+
+ecomet.create_object( 
+	fields, 
+	(result) =&gt; { 
+		console.log(&quot;Объект успешно создан:&quot;, result); 
+	}, 
+	(error) =&gt; { 
+		console.error(&quot;Ошибка создания объекта:&quot;, error); 
+	}, 
+	5000 // Таймаут 5 секунд 
+);
+</div></div></div></section></section><section class="chapter"><h3 id="edit-or-create-object" data-toc="edit-or-create-object">edit_or_create_object()</h3><p id="-5wb2ju_2093">: метод, который редактирует существующий или создает новый объект с указанными полями.</p><p id="-5wb2ju_2094">Синтаксис:</p><div class="code-block" data-lang="bash">
+edit_or_create_object(fields, OnOk, OnError, Timeout)
+</div><p id="-5wb2ju_2096">Параметры:</p><div class="code-block" data-lang="none">
+fields (object): Поля объекта.
+OnOk (function): Callback-функция при успешной операции.
+OnError (function): Callback-функция при ошибке операции.
+Timeout (number): Время ожидания в миллисекундах.
+</div><p id="-5wb2ju_2098">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2100" data-toc="-5wb2ju_2100">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const editOrCreateFields = { 
+	name: &quot;Existing or New Object&quot;, 
+	type: &quot;example&quot; }; 
+
+ecomet.edit_or_create_object( 
+	editOrCreateFields, 
+	(result) =&gt; { 
+		console.log(&quot;Объект успешно отредактирован или создан:&quot;, result); 
+	}, 
+	(error) =&gt; { 
+		console.error(&quot;Ошибка редактирования или создания объекта:&quot;, error); 
+	},
+	5000 // Таймаут 5 секунд 
+);
+</div></div></div></section></section><section class="chapter"><h3 id="edit-object" data-toc="edit-object">edit_object()</h3><p id="-5wb2ju_2102">: метод для редактирования существующего объекта с указанными полями.</p><p id="-5wb2ju_2103">Синтаксис:</p><div class="code-block" data-lang="bash">
+edit_object(oid, fields, OnOk, OnError, Timeout)
+</div><p id="-5wb2ju_2105">Параметры:</p><div class="code-block" data-lang="none">
+oid (string): Идентификатор объекта.
+fields (object): Новые поля объекта.
+OnOk (function): Callback-функция при успешной операции.
+OnError (function): Callback-функция при ошибке операции.
+Timeout (number): Время ожидания в миллисекундах.
+</div><p id="-5wb2ju_2107">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2109" data-toc="-5wb2ju_2109">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const objectId = &quot;123456&quot;; 
+const editFields = { 
+	name: &quot;Updated Object&quot;, 
+	type: &quot;example&quot; 
+}; 
+
+ecomet.edit_object( 
+	objectId, 
+	editFields, 
+	(result) =&gt; { 
+		console.log(&quot;Объект успешно отредактирован:&quot;, result); 
+	}, 
+	(error) =&gt; { 
+		console.error(&quot;Ошибка редактирования объекта:&quot;, error); 
+	}, 
+	5000 // Таймаут 5 секунд 
+);
+</div></div></div></section></section><section class="chapter"><h3 id="delete-object" data-toc="delete-object">delete_object()</h3><p id="-5wb2ju_2111">: метод для удаления объекта с указанным идентификатором.</p><p id="-5wb2ju_2112">Синтаксис:</p><div class="code-block" data-lang="bash">
+delete_object(oid, OnOk, OnError, Timeout)
+</div><p id="-5wb2ju_2114">Параметры:</p><div class="code-block" data-lang="none">
+oid (string): Идентификатор объекта.
+OnOk (function): Callback-функция при успешной операции.
+OnError (function): Callback-функция при ошибке операции.
+Timeout (number): Время ожидания в миллисекундах.
+</div><p id="-5wb2ju_2116">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2118" data-toc="-5wb2ju_2118">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const deleteObjectId = &quot;123456&quot;; 
+
+ecomet.delete_object( 
+	deleteObjectId, 
+	(result) =&gt; { 
+		console.log(&quot;Объект успешно удален:&quot;, result); 
+	}, 
+	(error) =&gt; { 
+		console.error(&quot;Ошибка удаления объекта:&quot;, error); 
+	},
+	5000 // Таймаут 5 секунд 
+);
+</div></div></div></section></section><section class="chapter"><h3 id="find" data-toc="find">find()</h3><p id="-5wb2ju_2120">: метод для поиска объектов по SQL-запросу.</p><p id="-5wb2ju_2121">Синтаксис:</p><div class="code-block" data-lang="bash">
+find(statement, OnOk, OnError, Timeout)
+</div><p id="-5wb2ju_2123">Параметры:</p><div class="code-block" data-lang="none">
+statement (string): SQL-запрос для поиска.
+OnOk (function): Callback-функция при успешном выполнении запроса.
+OnError (function): Callback-функция при ошибке выполнения запроса.
+Timeout (number): Время ожидания в миллисекундах.
+</div><p id="-5wb2ju_2125">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2127" data-toc="-5wb2ju_2127">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const statement = &quot;GET * FROM objects WHERE type='example'&quot;;
+
+ecomet.find(
+    statement,
+    (result) =&gt; {
+        console.log(&quot;Результаты поиска:&quot;, result);
+    },
+    (error) =&gt; {
+        console.error(&quot;Ошибка поиска:&quot;, error);
+    },
+    5000 // Таймаут 5 секунд
+);
+</div></div></div></section></section><section class="chapter"><h3 id="query" data-toc="query">query()</h3><p id="-5wb2ju_2129">: метод, который выполняет произвольный SQL-запрос.</p><p id="-5wb2ju_2130">Синтаксис:</p><div class="code-block" data-lang="bash">
+query(statement, OnOk, OnError, Timeout)
+</div><p id="-5wb2ju_2132">Параметры:</p><div class="code-block" data-lang="none">
+statement (string): SQL-запрос.
+OnOk (function): Callback-функция при успешном выполнении запроса.
+OnError (function): Callback-функция при ошибке выполнения запроса.
+Timeout (number): Время ожидания в миллисекундах.
+</div><p id="-5wb2ju_2134">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2136" data-toc="-5wb2ju_2136">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const queryStatement = &quot;SELECT * FROM objects WHERE type='example'&quot;;
+
+ecomet.query(
+    queryStatement,
+    (result) =&gt; {
+        console.log(&quot;Результаты запроса:&quot;, result);
+    },
+    (error) =&gt; {
+        console.error(&quot;Ошибка выполнения запроса:&quot;, error);
+    },
+    5000 // Таймаут 5 секунд
+);
+</div></div></div></section></section><section class="chapter"><h3 id="get" data-toc="get">get()</h3><p id="-5wb2ju_2138">: метод выполняет запрос и возвращает результат в удобном формате.</p><p id="-5wb2ju_2139">Синтаксис:</p><div class="code-block" data-lang="bash">
+get(statement, OnOk, OnError, Timeout)
+</div><p id="-5wb2ju_2141">Параметры:</p><div class="code-block" data-lang="none">
+statement (string): SQL-запрос.
+OnOk (function): Callback-функция при успешном выполнении запроса.
+OnError (function): Callback-функция при ошибке выполнения запроса.
+Timeout (number): Время ожидания в миллисекундах.
+</div><p id="-5wb2ju_2143">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2145" data-toc="-5wb2ju_2145">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const getStatement = &quot;GET .oid FROM objects WHERE type='example'&quot;;
+
+ecomet.get(
+    getStatement,
+    (result) =&gt; {
+        console.log(&quot;Полученные данные:&quot;, result);
+    },
+    (error) =&gt; {
+        console.error(&quot;Ошибка получения данных:&quot;, error);
+    },
+    5000 // Таймаут 5 секунд
+);
+</div></div></div></section></section><section class="chapter"><h3 id="subscribe" data-toc="subscribe">subscribe()</h3><p id="-5wb2ju_2147">: метод, который подписывается на изменения объектов, соответствующих указанному SQL-запросу.</p><p id="-5wb2ju_2148">Синтаксис:</p><div class="code-block" data-lang="bash">
+subscribe(statement, OnCreate, OnUpdate, OnDelete, OnError)
+</div><p id="-5wb2ju_2150">Параметры:</p><div class="code-block" data-lang="none">
+statement (string): SQL-запрос.
+OnCreate (function): Callback-функция при создании объекта.
+OnUpdate (function): Callback-функция при обновлении объекта.
+OnDelete (function): Callback-функция при удалении объекта.
+OnError (function): Callback-функция при ошибке выполнения запроса.
+</div><p id="-5wb2ju_2152">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2154" data-toc="-5wb2ju_2154">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const subscribeStatement = &quot;FROM objects WHERE type='example'&quot;;
+
+ecomet.subscribe(
+
+	subscribeStatement, 
+	(result) =&gt; { 
+		console.log(&quot;Объект создан:&quot;, result); 
+	}, 
+	(result) =&gt; { 
+		console.log(&quot;Объект обновлен:&quot;, result); 
+	}, 
+	(result) =&gt; { 
+		console.log(&quot;Объект удален:&quot;, result); 
+	}, 
+	(error) =&gt; { 
+		console.error(&quot;Ошибка подписки:&quot;, error); 
+	} 
+);
+</div></div></div></section></section><section class="chapter"><h3 id="unsubscribe" data-toc="unsubscribe">unsubscribe()</h3><p id="-5wb2ju_2156">: метод, который отписывается от изменений объектов.</p><p id="-5wb2ju_2157">Синтаксис:</p><div class="code-block" data-lang="bash">
+unsubscribe(id, OnOk, OnError)
+</div><p id="-5wb2ju_2159">Параметры:</p><div class="code-block" data-lang="none">
+id (number): Идентификатор подписки.
+OnOk (function): Callback-функция при успешной отписке.
+OnError (function): Callback-функция при ошибке отписки.
+</div><p id="-5wb2ju_2161">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2163" data-toc="-5wb2ju_2163">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const subscriptionId = 1; // Идентификатор подписки
+
+ecomet.unsubscribe(
+    subscriptionId,
+    () =&gt; {
+        console.log(&quot;Подписка успешно отменена&quot;);
+    },
+    (error) =&gt; {
+        console.error(&quot;Ошибка отмены подписки:&quot;, error);
+    }
+);
+</div></div></div></section></section><section class="chapter"><h3 id="application" data-toc="application">application()</h3><p id="-5wb2ju_2165">: метод для вызова функции приложения на сервере.</p><p id="-5wb2ju_2166">Синтаксис:</p><div class="code-block" data-lang="bash">
+application(module, method, params, OnOk, OnError, Timeout)
+</div><p id="-5wb2ju_2168">Параметры:</p><div class="code-block" data-lang="none">
+module (string): Название модуля.
+method (string): Название метода.
+params (object): Параметры метода.
+OnOk (function): Callback-функция при успешном выполнении.
+OnError (function): Callback-функция при ошибке выполнения.
+Timeout (number): Время ожидания в миллисекундах.
+</div><p id="-5wb2ju_2170">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2172" data-toc="-5wb2ju_2172">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const module = &quot;exampleModule&quot;;
+const method = &quot;exampleMethod&quot;;
+const params = { param1: &quot;value1&quot;, param2: &quot;value2&quot; };
+
+ecomet.application(
+    module,
+    method,
+    params,
+    (result) =&gt; {
+        console.log(&quot;Метод приложения успешно выполнен:&quot;, result);
+    },
+    (error) =&gt; {
+        console.error(&quot;Ошибка выполнения метода приложения:&quot;, error);
+    },
+    5000 // Таймаут 5 секунд
+);
+</div></div></div></section></section></section><section class="chapter"><h2 id="-5wb2ju_2174" data-toc="-5wb2ju_2174">Внутренние методы</h2><section class="chapter"><h3 id="action" data-toc="action">_action()</h3><p id="-5wb2ju_2175">: метод, который отправляет запрос на сервер. Метод _action используется внутри других методов класса Ecomet для выполнения различных операций.</p><p id="-5wb2ju_2176">Синтаксис:</p><div class="code-block" data-lang="bash">
+_action(Type, Params, OnOk, OnError, Timeout, Id)
+</div><p id="-5wb2ju_2178">Параметры:</p><div class="code-block" data-lang="none">
+Type (string): Тип действия.
+Params (object): Параметры действия.
+OnOk (function): Callback-функция при успешном выполнении действия.
+OnError (function): Callback-функция при ошибке выполнения действия.
+Timeout (number): Время ожидания в миллисекундах.
+Id (number): Идентификатор действия.
+</div><p id="-5wb2ju_2180">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+Идентификатор выполненного действия.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2182" data-toc="-5wb2ju_2182">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+create_object(fields, OnOk, OnError, Timeout) {
+    return this._action(&quot;create&quot;, { fields }, OnOk, OnError, Timeout, -1);
+}
+</div><p id="-5wb2ju_2184">В этом примере метод create_object вызывает _action с типом действия &quot;create&quot; и параметрами fields.</p></div></div></section></section><section class="chapter"><h3 id="on-receive" data-toc="on-receive">_on_receive()</h3><p id="-5wb2ju_2185">: метод для обработки ответа от сервера. Метод _on_receive в классе Ecomet отвечает за обработку ответов, получаемых от сервера через WebSocket-соединение.</p><p id="-5wb2ju_2186">Синтаксис:</p><div class="code-block" data-lang="bash">
+_on_receive(response)
+</div><p id="-5wb2ju_2188">Параметры:</p><div class="code-block" data-lang="none">
+response (object): Ответ от сервера.
+</div><p id="-5wb2ju_2190">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+: нет.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2192" data-toc="-5wb2ju_2192">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+connectUrl(URL, OnOk, OnError, OnClose) {
+    URL = URL.replace(&quot;https:&quot;, &quot;wss:&quot;);
+    this._URL = URL.replace(&quot;http:&quot;, &quot;ws:&quot;);
+    try {
+        this._connection = new WebSocket(this._URL);
+        this._connection.onopen = OnOk;
+        this._connection.onmessage = event =&gt; { this._on_receive(event.data) };
+        this._connection.onclose = () =&gt; {
+            this._connection = undefined;
+            this._actions = {};
+            if (typeof OnClose === &quot;function&quot;) OnClose();
+        };
+    } catch (Error) { OnError(Error); }
+}
+</div><p id="-5wb2ju_2194">В этом примере метод _on_receive вызывается автоматически при получении сообщения от сервера. Это происходит благодаря настройке обработчика события onmessage в методе connectUrl.</p></div></div></section></section></section><section class="chapter"><h2 id="-5wb2ju_2195" data-toc="-5wb2ju_2195">Статические методы</h2><section class="chapter"><h3 id="to-ecomet1" data-toc="to-ecomet1">to_ecomet1()</h3><p id="-5wb2ju_2196">: метод, который преобразует результаты запроса в формат Ecomet. Метод to_ecomet1 используется для преобразования результата запроса, полученного от сервера. Он принимает массив, где первый элемент &mdash; это заголовки, а остальные элементы &mdash; строки данных.</p><p id="-5wb2ju_2197">Синтаксис:</p><div class="code-block" data-lang="bash">
+static to_ecomet1([Header, ...Rows], all)
+</div><p id="-5wb2ju_2199">Параметры:</p><div class="code-block" data-lang="none">
+Header (array): Заголовки полей.
+Rows (array): Строки данных.
+all (boolean): Флаг, указывающий, следует ли включать все поля.
+</div><p id="-5wb2ju_2201">Возвращаемое значение:</p><div class="code-block" data-lang="none">
+array: Преобразованные данные.
+</div><section class="chapter"><div class="collapse"><div class="collapse__title"><h4 id="-5wb2ju_2203" data-toc="-5wb2ju_2203">Пример:</h4></div><div class="collapse__content"><div class="code-block" data-lang="bash">
+const ecomet = new Ecomet();
+
+ecomet.connectUrl(
+    &quot;ws://127.0.0.1:8080/websocket&quot;,
+    () =&gt; {
+        console.log(&quot;Успешное подключение к серверу&quot;);
+
+		// Пример выполнения запроса и преобразования данных 
+		ecomet.query( 
+			&quot;GET * FROM example_table&quot;, 
+			(result) =&gt; { 
+				const transformedData = Ecomet.to_ecomet1(result, true);
+				console.log(&quot;Преобразованные данные:&quot;, transformedData); 
+			},
+			(error) =&gt; { 
+				console.error(&quot;Ошибка выполнения запроса:&quot;, error); 
+			}, 
+			5000 // Таймаут 5 секунд 
+		); 
+	}, 
+	(error) =&gt; { 
+		console.error(&quot;Ошибка подключения:&quot;, error); 
+	}, 
+	() =&gt; { 
+		console.log(&quot;Соединение закрыто&quot;); 
+	} 
+);
+</div><p id="-5wb2ju_2205">Этот пример демонстрирует, как можно использовать метод to_ecomet1 для преобразования данных, полученных от сервера, в удобный для работы формат.</p></div></div></section></section></section><div class="last-modified">Last modified: 17 June 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="методы-субд.html" class="navigation-links__prev">API СУБД</a><a href="глоссарий.html" class="navigation-links__next">Глоссарий</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.js"></script></body></html>

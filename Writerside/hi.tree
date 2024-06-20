@@ -38,6 +38,7 @@
     </toc-element>
     <toc-element topic="Ecomet-СУБД.md">
         <toc-element topic="Настройка-и-работа-с-базой-данных.md"/>
+        <toc-element topic="Запросы-и-операции-с-данными-справочник-пользователя.md"/>
         <toc-element topic="Методы-СУБД.md">
             <toc-element topic="Класс-Ecomet.md"/>
             <toc-element topic="ecomet-old-js.md"/>

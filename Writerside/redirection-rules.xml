@@ -46,4 +46,8 @@
         <description>Created after removal of "Тренды1" from Faceplate docs</description>
         <accepts>Тренды1.html</accepts>
     </rule>
+    <rule id="6d9ca55a">
+        <description>Created after removal of "ecomet_req.js" from Faceplate docs</description>
+        <accepts>ecomet-req-js.html</accepts>
+    </rule>
 </rules>

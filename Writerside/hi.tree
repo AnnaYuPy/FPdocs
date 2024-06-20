@@ -40,6 +40,8 @@
         <toc-element topic="Настройка-и-работа-с-базой-данных.md"/>
         <toc-element topic="Методы-СУБД.md">
             <toc-element topic="Класс-Ecomet.md"/>
+            <toc-element topic="ecomet-old-js.md"/>
+            <toc-element topic="require-js.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Глоссарий.md"/>

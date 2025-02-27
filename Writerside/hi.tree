@@ -32,8 +32,8 @@
     </toc-element>
     <toc-element topic="Faceplate-Runtime.md">
         <toc-element topic="Мнемосхемы.md"/>
-        <toc-element topic="Журнал-сообщений.md"/>
         <toc-element topic="Тренды.md"/>
+        <toc-element topic="Журнал-сообщений.md"/>
     </toc-element>
     <toc-element topic="Ecomet-СУБД.md">
         <toc-element topic="Настройка-и-работа-с-базой-данных.md"/>

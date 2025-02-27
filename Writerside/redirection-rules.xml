@@ -54,4 +54,12 @@
         <description>Created after removal of "KPI" from Faceplate docs</description>
         <accepts>KPI.html</accepts>
     </rule>
+    <rule id="19c0bdf4">
+        <description>Created after removal of "Журнал сообщений" from Faceplate docs</description>
+        <accepts>hn.html</accepts>
+    </rule>
+    <rule id="7dc897f6">
+        <description>Created after removal of "Тренды" from Faceplate docs</description>
+        <accepts>Тренды.html</accepts>
+    </rule>
 </rules>

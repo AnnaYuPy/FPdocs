@@ -53,6 +53,7 @@
     </toc-element>
     <toc-element topic="Журналы-диспетчеризации.md"/>
     <toc-element topic="Глоссарий.md"/>
+    <toc-element topic="Руководство-программиста.md"/>
     <toc-element topic="Справочник-Reference.md">
         <toc-element topic="API-Faceplate.md"/>
         <toc-element topic="Поддержка-жизненного-цикла-программного-обеспечения.md"/>

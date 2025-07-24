@@ -1,49 +1,78 @@
 # Faceplate Studio
 
-Tutorials are learning-oriented articles that help users to go through a process and achieve a deliverable.
-Start with an introduction: for whom is this tutorial and what the reader will achieve by reading it.
-Answer the question: "Why should I follow this?"
+﻿Для запуска Studio необходимо в адресной строке браузера (Google Chrome, Mozilla Firefox, Yandex Browser, Apple Safari, Opera) ввести следующую строку:
 
-Provide a short outline for the tutorial.
-In this tutorial, you will learn how to:
-* Do this
-* Deal with that
+x.x.x.x:9000/fp/studio
 
-## Before you start
+где x.x.x.x - IP-адрес соответствующего узла (НДЦ или РДЦ).
 
-List the prerequisites that are required or recommended.
+Далее появляется окно авторизации, в котором оператор должен ввести свои учетные данные — логин и пароль:
 
-Make sure that:
-- First prerequisite
-- Second prerequisite
+![5240250681607186025.jpg](Aspose.Words.0516b7b7-1a80-4b17-86bd-71a741fd7d02.001.jpeg)
 
-## Part 1
+Если авторизация прошла успешно, то открывается главное окно Studio:
 
-Describe what the user will learn and accomplish in the first part,
-then write a step-by-step procedure but on a real-world example.
+![](Aspose.Words.0516b7b7-1a80-4b17-86bd-71a741fd7d02.002.png)
 
-1. Execute the following command in the terminal:
+Интерфейс главного окна состоит из нескольких основных областей:
 
-   ```bash
-    run this --that
-   ```
+**Левая панель навигации** – включает различные модули для работы с проектом:
 
-2. Step with a [link](https://www.jetbrains.com)
+*Общий вид* – основная папка проекта, в которой содержатся другие элементы.
 
-3. Final step in part 1.
+*Прототипы* – для управления прототипами объектов.
 
-## Part 2
+*Примитивы* – инструменты для создания базовых элементов.
 
-This is the second part of the tutorial:
+*Каталоги* – место хранения всех объектов, используемых в проекте.
 
-1. Step 1
-2. Step 2
-3. Step n
+*Библиотечные модули* – доступ к библиотечным модулям.
 
-## What you've learned {id="what-learned"}
+*PLC соединения* – настройка соединений с контроллерами.
 
-Summarize what the reader achieved by completing this tutorial.
+*IoT соединения* – настройки для интеграции с IoT-устройствами.
 
-<seealso>
-<!--Give some related links to how-to articles-->
-</seealso>
+*Архивы* – управление историческими данными.
+
+*Сообщения* – работа с системными сообщениями.
+
+*Скрипты* – создание и редактирование скриптов.
+
+*Шаблоны* – доступ к шаблонам для элементов интерфейса.
+
+*Права* – управление доступом и правами пользователей.
+
+*Сервера* – управление серверными компонентами.
+
+*Базы данных* – настройка подключения к базам данных.
+
+*Видео* – работа с видеопотоками (если поддерживается).
+
+*Поддержка языков* – настройки языковой локализации.
+
+**Центральная область** отображения содержимого папки "Общий вид" – содержит список объектов в текущем проекте. В этой области отображаются следующие элементы:
+
+- Объекты с различными статусами (**ON/OFF** в колонке **Runtime**), показывающие, активен или отключен данный элемент в Runtime-среде.
+- Папки, такие как @FIXED SCREEN AREA, @calculation, @lines, @models, которые содержат другие объекты.
+
+  **Верхняя панель инструментов** – содержит кнопки для выполнения действий над объектами:
+
+  *Создать* – создание нового объекта.
+
+  *Редактировать* – открытие выбранного элемента для редактирования.
+
+  *Удалить* – удаление выбранного объекта.
+
+  *Копировать и вставить* – команды для копирования и вставки объектов.
+
+  *Screen* –инструмент в SCADA-системе, позволяющий создавать и управлять графическими представлениями объектов на мнемосхеме.
+
+  *Dependencies* – просмотр зависимостей между элементами.
+
+  *Обновить* – обновление текущего состояния.
+
+  *Run/Stop Runtime* – останов/запуск Runtime-сервера.
+
+  *Export/Import folder/project* – кнопки для экспорта и импорта папок и проектов.
+
+  **Нижняя панель навигации** – позволяет перемещаться по страницам списка объектов, отображая общее количество объектов и номер страницы.

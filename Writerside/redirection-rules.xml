@@ -70,4 +70,8 @@
         <description>Created after removal of "Мастера" from Faceplate docs</description>
         <accepts>Мастера.html</accepts>
     </rule>
+    <rule id="3f0ef105">
+        <description>Created after removal of "Общий вид" from Faceplate docs</description>
+        <accepts>Общий-вид.html</accepts>
+    </rule>
 </rules>

@@ -11,7 +11,6 @@
     <toc-element topic="Порты-используемые-в-Faceplate.md"/>
     <toc-element topic="Tutorial.md"/>
     <toc-element topic="Faceplate-Tutorial.md">
-        <toc-element topic="Общий-вид.md"/>
         <toc-element topic="Прототипы.md"/>
         <toc-element topic="PLC-соединения.md">
         </toc-element>

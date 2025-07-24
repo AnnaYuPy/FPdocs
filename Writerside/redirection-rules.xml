@@ -62,4 +62,12 @@
         <description>Created after removal of "Тренды" from Faceplate docs</description>
         <accepts>Тренды.html</accepts>
     </rule>
+    <rule id="1a76378">
+        <description>Created after removal of "PLC-черновик" from Faceplate docs</description>
+        <accepts>Привязки.html</accepts>
+    </rule>
+    <rule id="3f36c106">
+        <description>Created after removal of "Мастера" from Faceplate docs</description>
+        <accepts>Мастера.html</accepts>
+    </rule>
 </rules>

@@ -14,8 +14,6 @@
         <toc-element topic="Общий-вид.md"/>
         <toc-element topic="Прототипы.md"/>
         <toc-element topic="PLC-соединения.md">
-            <toc-element topic="Привязки.md"/>
-            <toc-element topic="Мастера.md"/>
         </toc-element>
         <toc-element topic="IoT-соединения.md"/>
         <toc-element topic="Архивы.md"/>

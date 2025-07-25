@@ -6,7 +6,11 @@
                  name="Faceplate docs"
                  start-page="Tutorial.md">
 
-    <toc-element topic="Обзор.md"/>
+    <toc-element topic="Обзор.md">
+        <toc-element topic="Инфраструктурные-требования-и-архитектура-отказоустойчивости.md"/>
+        <toc-element topic="Архитектура-системы.md"/>
+    </toc-element>
+    <toc-element topic="Системные-требования.md"/>
     <toc-element topic="Требования-к-персоналу.md"/>
     <toc-element topic="Порты-используемые-в-Faceplate.md"/>
     <toc-element topic="Tutorial.md"/>

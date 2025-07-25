@@ -94,4 +94,8 @@
         <description>Created after removal of "How to" from Faceplate docs</description>
         <accepts>How-to.html</accepts>
     </rule>
+    <rule id="40144813">
+        <description>Created after removal of "Общие сведения" from Faceplate docs</description>
+        <accepts>Общие-сведения.html</accepts>
+    </rule>
 </rules>

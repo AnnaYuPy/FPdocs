@@ -74,4 +74,24 @@
         <description>Created after removal of "Общий вид" from Faceplate docs</description>
         <accepts>Общий-вид.html</accepts>
     </rule>
+    <rule id="17a740f2">
+        <description>Created after removal of "Журналы диспетчеризации" from Faceplate docs</description>
+        <accepts>Журналы-диспетчеризации.html</accepts>
+    </rule>
+    <rule id="2df0c5d7">
+        <description>Created after removal of "Replica" from Faceplate docs</description>
+        <accepts>Replica.html</accepts>
+    </rule>
+    <rule id="3cc54e3a">
+        <description>Created after removal of "Broker" from Faceplate docs</description>
+        <accepts>Broker.html</accepts>
+    </rule>
+    <rule id="23a468b4">
+        <description>Created after removal of "Механизмы синхронизации" from Faceplate docs</description>
+        <accepts>Механизмы-синхронизации.html</accepts>
+    </rule>
+    <rule id="41237fb3">
+        <description>Created after removal of "How to" from Faceplate docs</description>
+        <accepts>How-to.html</accepts>
+    </rule>
 </rules>

@@ -98,4 +98,24 @@
         <description>Created after removal of "Общие сведения" from Faceplate docs</description>
         <accepts>Общие-сведения.html</accepts>
     </rule>
+    <rule id="70ba8754">
+        <description>Created after removal of "Видео" from Faceplate docs</description>
+        <accepts>Видео.html</accepts>
+    </rule>
+    <rule id="3c44b8de">
+        <description>Created after removal of "Поддержка языков" from Faceplate docs</description>
+        <accepts>Поддержка-языков.html</accepts>
+    </rule>
+    <rule id="7ab9d2d6">
+        <description>Created after removal of "Каталоги" from Faceplate docs</description>
+        <accepts>Каталоги.html</accepts>
+    </rule>
+    <rule id="5cafeaf2">
+        <description>Created after removal of "API Faceplate" from Faceplate docs</description>
+        <accepts>API-Faceplate.html</accepts>
+    </rule>
+    <rule id="b0b621d">
+        <description>Created after removal of "Библиотека программиста" from Faceplate docs</description>
+        <accepts>Руководство-программиста.html</accepts>
+    </rule>
 </rules>
